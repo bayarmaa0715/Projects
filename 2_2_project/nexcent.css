@@ -1,0 +1,594 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: rgba(245, 247, 250, 1);
+}
+
+.logo {
+  width: 155px;
+  height: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 90px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu p:hover {
+  color: white;
+  background-color: black;
+  padding: 3px 10px;
+  border-radius: 3px;
+  transition: all 0.7s ease-in-out;
+}
+
+.login-signup button {
+  gap: 14px;
+  width: 91px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#log {
+  color: rgba(76, 175, 79, 1);
+  background-color: rgba(245, 247, 250, 1);
+}
+
+#log:hover {
+  background-color: rgba(76, 175, 79, 0.9);
+  color: rgba(245, 247, 250, 1);
+  transition: all 0.7s linear;
+}
+
+#sign {
+  background-color: rgba(76, 175, 79, 1);
+  color: rgba(245, 247, 250, 1);
+}
+
+#sign:hover {
+  color: rgba(76, 175, 79, 1);
+  background-color: rgba(245, 247, 250, 1);
+  transition: all 0.7s linear;
+}
+
+.herosection {
+  background-color: rgba(245, 247, 250, 1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 96px;
+}
+
+.header-text {
+  width: 657px;
+}
+
+.header-text h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 76px;
+  color: rgba(77, 77, 77, 1);
+}
+
+.header-text span {
+  font-weight: 600;
+  color: rgba(76, 175, 79, 1);
+}
+
+.header-text p {
+  color: rgba(113, 113, 113, 1);
+  font-size: 16px;
+  margin-top: 16px;
+  letter-spacing: 0.7px;
+}
+
+.header-text button {
+  margin-top: 32px;
+  padding: 14px 32px;
+  background-color: rgba(76, 175, 79, 1);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-text button:hover {
+  color: rgba(76, 175, 79, 1);
+  background-color: white;
+  transition: all 0.6s ease-in;
+  border: 1px solid rgba(76, 175, 79, 1);
+}
+
+.header img {
+  width: 391px;
+  height: 407px;
+}
+
+.color-comma {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  padding-bottom: 16px;
+  gap: 8px;
+}
+.color-comma p {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(76, 175, 79, 1);
+  border-radius: 5px;
+}
+
+#comma2 {
+  background-color: rgba(76, 175, 79, 0.6);
+}
+
+#comma3 {
+  background-color: rgba(76, 175, 79, 0.3);
+}
+
+.community-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.communuty-logos {
+  margin-top: 40px;
+}
+
+.community-section-row h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 8px;
+}
+
+.community-section-row p {
+  font-size: 16px;
+  color: rgba(113, 113, 113, 1);
+  margin-bottom: 16px;
+}
+
+.communuty-logos-image-row {
+  display: flex;
+  gap: 180px;
+  margin-bottom: 40px;
+  padding: 25px 0;
+}
+
+.ccommunuty-logos-image img {
+  width: 48px;
+  height: 48px;
+}
+
+.community-system-text {
+  justify-content: center;
+  display: flex;
+}
+.community-system-text h1 {
+  width: 542px;
+  text-align: center;
+}
+
+.community-system-intro {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+
+.system-box {
+  width: 300px;
+  /* height: 260px; */
+  padding: 24px 16px;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+
+.system-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: rgba(77, 77, 77, 1);
+  margin-top: 16px;
+  padding: 5px 25px;
+}
+
+.system-box p {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(113, 113, 113, 1);
+  margin-top: 8px;
+}
+
+.system-box:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 2px 4px 0px rgba(140, 231, 91, 0.8);
+  cursor: pointer;
+  transition: all 0.6s ease-in;
+}
+
+.news-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.news-header-text {
+  width: 601px;
+}
+
+.news-header-text h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: rgba(77, 77, 77, 1);
+  margin-bottom: 16px;
+}
+
+.news-header-text p {
+  color: rgba(113, 113, 113, 1);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.news-header-text button {
+  margin-top: 32px;
+  padding: 14px 32px;
+  background-color: rgba(76, 175, 79, 1);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.news-header-text button:hover {
+  color: rgba(76, 175, 79, 1);
+  background-color: white;
+  transition: all 0.6s ease-in;
+  border: 1px solid rgba(76, 175, 79, 1);
+}
+
+.news-header-image img {
+  width: 442px;
+  height: 433px;
+}
+
+.data-section {
+  background-color: rgba(245, 247, 250, 1);
+}
+
+.data-section-box-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.data-section-text {
+  width: 408px;
+}
+
+.data-section-text h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: rgba(77, 77, 77, 1);
+}
+
+.data-section-text span {
+  font-weight: 600;
+  color: rgba(76, 175, 79, 1);
+}
+
+.data-section-text p {
+  color: rgba(113, 113, 113, 1);
+  font-size: 16px;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+.data-section-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 580px;
+  gap: 30px;
+}
+
+.data-box {
+  display: flex;
+  gap: 16px;
+}
+
+.data-box img {
+  width: 48px;
+  height: 48px;
+}
+
+.data-box h2 {
+  width: 191px;
+  color: rgba(77, 77, 77, 1);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.data-box p {
+  color: rgba(113, 113, 113, 1);
+  font-size: 16px;
+}
+
+.data-box:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 2px 4px 0px rgba(140, 231, 91, 0.8);
+  cursor: pointer;
+  transition: all 0.6s ease-in;
+}
+
+.tesla-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 48px;
+  background-color: rgba(245, 247, 250, 1);
+  padding: 32px;
+}
+
+.tesla-image img {
+  width: 326px;
+  height: 326px;
+}
+
+.tesla-row {
+  width: 738px;
+}
+
+.tesla-text p {
+  color: rgba(113, 113, 113, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.tesla-text h {
+  color: rgba(76, 175, 79, 1);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.tesla-text span {
+  color: rgba(137, 147, 158, 1);
+  font-size: 16px;
+}
+
+.tesla-members {
+  display: flex;
+  gap: 41px;
+  margin-top: 32px;
+}
+
+.tesla-members img {
+  width: 48px;
+  height: 48px;
+}
+
+.tesla-members button {
+  color: rgba(76, 175, 79, 1);
+  font-size: 20px;
+  font-weight: 550;
+  width: 223px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.marketing-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.market-text {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.market-text h1 {
+  color: rgba(77, 77, 77, 1);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.market-text p {
+  color: rgba(113, 113, 113, 1);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  width: 628px;
+}
+
+.market-gruop {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.marketbox {
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+
+.marketbox img {
+  width: 368px;
+  height: 286px;
+  border-radius: 8px;
+  object-fit: cover;
+  /* position: relative; */
+}
+
+.marketbox-text {
+  position: absolute;
+  width: 317px;
+  height: 176px;
+  border-radius: 8px;
+  background-color: rgba(245, 247, 250, 1);
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+  top: 190px;
+  color: rgba(113, 113, 113, 1);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 16px 30px;
+}
+
+.marketbox-text button {
+  margin-top: 24px;
+  color: rgba(76, 175, 79, 1);
+  font-size: 20px;
+  font-weight: 600;
+  border: transparent;
+  background-color: transparent;
+}
+
+.footer-header-row {
+  position: relative;
+  margin-top: 175px;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(38, 50, 56, 1);
+  background-color: rgba(245, 247, 250, 1);
+  padding-top: 32px;
+}
+
+.footer-header {
+  width: 887px;
+}
+
+.footer-header button {
+  width: Hug (178px) px;
+  height: Hug (52px) px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  color: white;
+  background: rgba(76, 175, 79, 1);
+  border: none;
+  margin-bottom: 32px;
+}
+
+.footer-header button:hover {
+  background-color: white;
+  color: rgba(76, 175, 79, 1);
+  border: 1px solid rgba(76, 175, 79, 1);
+  transition: all 0.6s ease-in;
+}
+
+.footer-footer {
+  background-color: rgba(38, 50, 56, 1);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 64px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(245, 247, 250, 1);
+}
+
+.footer-logo img {
+  margin-bottom: 42px;
+  width: 137.84px;
+  height: 25.54px;
+}
+.footer-icon {
+  display: flex;
+  justify-content: start;
+  margin-top: 40px;
+
+  gap: 16px;
+}
+.footer-icon a {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(70, 71, 72);
+  border-radius: 17px;
+  padding: 7.5px;
+}
+
+.footer-icon a img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: start;
+  gap: 110px;
+}
+
+.footer-menu h1 {
+  margin-bottom: 24px;
+}
+
+.footer-menu p {
+  margin-bottom: 12px;
+}
+
+.email input {
+  position: relative;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 255px;
+  border: transparent;
+  color: rgba(217, 219, 225, 1);
+  font-size: 14px;
+}
+
+.email input ::placeholder {
+  color: rgba(217, 219, 225, 1);
+  font-size: 14px;
+}
+
+.email-sentbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.email-sentbox img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin: 10px;
+  cursor: pointer;
+}
