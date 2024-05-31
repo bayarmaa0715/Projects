@@ -320,9 +320,8 @@ nav {
 }
 
 .slider-box:hover {
-  /* transition: all 0.6s linear; */
-  transform: scale(1.5);
-  transition: transform(scale(1.5));
+  transition: all 0.4s ease-in;
+  transform: scale(1.1);
 }
 .box1 {
   background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 150%),
