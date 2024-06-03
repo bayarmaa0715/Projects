@@ -10,7 +10,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), black 65%),
     url("./new\ backround\ umag.jpeg");
   width: 100vw;
-  height: 95vh;
+  height: 63vh;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -266,7 +266,10 @@ nav {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -290px;
+  /* top: -290px; */
+  /* background-color: linear-gradient(rgb(56, 189, 35) 65%); */
+  background-color: #fafafa;
+  background-image: linear-gradient(black 70%, #fafafa 30%);
 }
 
 .slider-text {
@@ -409,3 +412,113 @@ nav {
   background-color: #0078f6;
   color: white;
 }
+
+.article {
+  background-color: #fafafa;
+  padding-top: 97px;
+}
+
+.article-container {
+  display: flex;
+  justify-content: center;
+}
+
+.article-box {
+  width: 49vw;
+  /* height: 27vh; */
+  /* border: 1px solid red; */
+}
+
+.article-box-resourse {
+  display: flex;
+  gap: px;
+}
+
+.article-box-resourse a img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 4px 4px;
+}
+
+.resourse-text {
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.resourse-text a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.resourse-text p {
+  color: #888888;
+}
+
+.article-box-main {
+  background-color: white;
+  display: flex;
+  align-items: start;
+  margin-top: 13px;
+  padding: 28px 65px 20px 30px;
+  gap: 20px;
+  font-weight: 700;
+  width: 46rem;
+  height: 11rem;
+  border-radius: 0 2.7rem 2.7rem 2.7rem;
+  margin-bottom: 44px;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: #0078f6;
+  border-radius: 50%;
+  margin-top: 3px;
+}
+.article-box-main p {
+  color: #0078f6;
+  letter-spacing: 0.03rem;
+  font-size: 0.7rem;
+}
+
+.article-box-main a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.35rem;
+}
+.article-box-main img {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.article-viewer-comment {
+  display: flex;
+  gap: 15px;
+}
+
+.article-viewer-comment i {
+  color: #888888;
+  font-weight: 600;
+  font-size: 0.7rem;
+  margin-top: 16px;
+}
+
+.po-rigth {
+  display: grid;
+  justify-content: end;
+}
+.po-rigth > .article-box-resourse {
+  display: flex;
+  justify-content: end;
+}
+/* 
+.po-rigth > .article-box-main {
+  justify-content: end;
+} */
