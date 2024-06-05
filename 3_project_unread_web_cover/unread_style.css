@@ -8,9 +8,9 @@
 
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), black 65%),
-    url("./new\ backround\ umag.jpeg");
+    url("./image/new\ backround\ umag.jpeg");
   width: 100vw;
-  height: 63vh;
+  height: 60vh;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -175,11 +175,15 @@ nav {
 }
 
 .hero-content-container img {
-  width: 447px;
-  height: 447px;
+  width: 444px;
+  height: 444px;
   border-radius: 20px;
   object-fit: cover;
   object-position: 10% 50%;
+}
+
+.hero-content-container img:hover {
+  object-view-box: inset(10% 10% 10% 10%);
 }
 
 .hero-content-text {
@@ -269,14 +273,14 @@ nav {
   /* top: -290px; */
   /* background-color: linear-gradient(rgb(56, 189, 35) 65%); */
   background-color: #fafafa;
-  background-image: linear-gradient(black 70%, #fafafa 30%);
+  background-image: linear-gradient(black 63%, #fafafa 30%);
 }
 
 .slider-text {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  padding: 0px 90px;
+  padding: 0px 120px;
 }
 
 .slider-text h1 {
@@ -316,8 +320,8 @@ nav {
 }
 
 .slider-box {
-  width: 240px;
-  height: 354px;
+  width: 293px;
+  /* height: 433px; */
   padding: 12px 13px;
   box-shadow: 0px 5px 4px 0px rgba(50, 51, 52, 0.2);
 }
@@ -328,39 +332,39 @@ nav {
 }
 .box1 {
   background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 150%),
-    url("./box1.jpeg");
+    url("./image/box1.jpeg");
   border-radius: 10px;
   background-position: center;
   background-size: cover;
 }
 
 .box2 {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 150%),
-    url("./box2.png");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 140%),
+    url("./image/box2.png");
   border-radius: 10px;
   background-position: center;
   background-size: cover;
 }
 
 .box3 {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 150%),
-    url("./box3.jpeg");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 140%),
+    url("./image/box3.jpeg");
   border-radius: 10px;
   background-position: center;
   background-size: cover;
 }
 
 .box4 {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 150%),
-    url("./box4.png");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 140%),
+    url("./image/box4.png");
   border-radius: 10px;
   background-position: 13% 50%;
   background-size: cover;
 }
 
 .box5 {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 150%),
-    url("./box5.png");
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), black 140%),
+    url("./image/box5.png");
   border-radius: 10px;
   background-position: center;
   background-size: cover;
@@ -385,8 +389,9 @@ nav {
 .slider-viewer-comment {
   display: flex;
   gap: 10px;
-  margin-top: 140px;
+  margin-top: 272px;
   margin-bottom: 15px;
+  font-size: 12px;
 }
 
 .fa-solid {
@@ -474,19 +479,18 @@ nav {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.015);
 }
 
-.dot {
-  width: 7px;
-  height: 7px;
-  background-color: #0078f6;
-  border-radius: 50%;
+.article-box-main .fa-circle {
+  color: #0078f6;
+  font-size: 7px;
+  align-items: center;
   margin-top: 3px;
-  /* margin-right: 20px; */
 }
 
 .article-box-main p {
   color: #0078f6;
   letter-spacing: 0.03rem;
   font-size: 0.7rem;
+  margin-bottom: 8px;
 }
 
 .article-box-main a {
@@ -529,8 +533,7 @@ nav {
   display: flex;
   justify-content: center;
   background-color: #fafafa;
-  border-bottom-left-radius: 3.6rem;
-  border-bottom-right-radius: 3.6rem;
+
   position: relative;
 }
 
@@ -582,7 +585,7 @@ nav {
   transition: all 0.6s ease-in;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.history-box button {
+.history-boxs button {
   position: absolute;
   border-radius: 7px;
   padding: 4px 11px;
@@ -616,7 +619,7 @@ nav {
 }
 
 .pack1 {
-  background-image: url("./h1.jpeg");
+  background-image: url("./image/h1.jpeg");
   grid-column: 2 span;
   grid-row: 1/5;
   background-position: center;
@@ -624,21 +627,21 @@ nav {
 }
 
 .pack2 {
-  background-image: url("./h2.jpeg");
+  background-image: url("./image/h2.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 1/4;
 }
 
 .pack3 {
-  background-image: url("./h3.png");
+  background-image: url("./image/h3.png");
   background-position: center;
   background-size: cover;
   grid-row: 1/4;
 }
 
 .pack4 {
-  background-image: url("./h4.jpeg");
+  background-image: url("./image/h4.jpeg");
   background-position: center;
   background-size: cover;
   grid-column: 3/4;
@@ -646,7 +649,7 @@ nav {
 }
 
 .pack5 {
-  background-image: url("./h5.png");
+  background-image: url("./image/h5.png");
   background-position: center;
   background-size: cover;
   grid-column: 4/5;
@@ -654,21 +657,21 @@ nav {
 }
 
 .pack6 {
-  background-image: url("./h6.jpeg");
+  background-image: url("./image/h6.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 5/8;
 }
 
 .pack7 {
-  background-image: url("./h7.jpeg");
+  background-image: url("./image/h7.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 5/8;
 }
 
 .pack8 {
-  background-image: url("./h8.jpeg");
+  background-image: url("./image/h8.jpeg");
   grid-column: 2 span;
   grid-row: 1/5;
   background-position: center;
@@ -676,21 +679,21 @@ nav {
 }
 
 .pack9 {
-  background-image: url("./h9.jpeg");
+  background-image: url("./image/h9.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 1/4;
 }
 
 .pack10 {
-  background-image: url("./h10.jpeg");
+  background-image: url("./image/h10.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 1/4;
 }
 
 .pack11 {
-  background-image: url("./h11.jpeg");
+  background-image: url("./image/h11.jpeg");
   background-position: center;
   background-size: cover;
   grid-column: 3/4;
@@ -698,7 +701,7 @@ nav {
 }
 
 .pack12 {
-  background-image: url("./h12.jpeg");
+  background-image: url("./image/h12.jpeg");
   background-position: center;
   background-size: cover;
   grid-column: 4/5;
@@ -706,21 +709,21 @@ nav {
 }
 
 .pack13 {
-  background-image: url("./h13.jpeg");
+  background-image: url("./image/h13.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 5/8;
 }
 
 .pack14 {
-  background-image: url("./h14.jpeg");
+  background-image: url("./image/h14.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 5/8;
 }
 
 .pack15 {
-  background-image: url("./h15.jpeg");
+  background-image: url("./image/h15.jpeg");
   grid-column: 2 span;
   grid-row: 1/5;
   background-position: center;
@@ -728,21 +731,21 @@ nav {
 }
 
 .pack16 {
-  background-image: url("./h16.jpeg");
+  background-image: url("./image/h16.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 1/4;
 }
 
 .pack17 {
-  background-image: url("./h17.jpeg");
+  background-image: url("./image/h17.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 1/4;
 }
 
 .pack18 {
-  background-image: url("./h18.jpeg");
+  background-image: url("./image/h18.jpeg");
   background-position: center;
   background-size: cover;
   grid-column: 3/4;
@@ -758,24 +761,24 @@ nav {
 } */
 
 .pack20 {
-  background-image: url("./h20.jpeg");
+  background-image: url("./image/h20.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 5/8;
 }
 
 .pack21 {
-  background-image: url("./h21.jpeg");
+  background-image: url("./image/h21.jpeg");
   background-position: center;
   background-size: cover;
   grid-row: 5/8;
+  /* height: 250px; */
 }
 
 .footer {
-  display: flex;
+  display: grid;
   justify-content: center;
   background-color: black;
-  padding-top: 80px;
 }
 
 .footer-main {
@@ -802,6 +805,12 @@ nav {
     rgb(68, 73, 71),
     rgba(3, 3, 3, 0.739)
   );
+}
+
+.content-sent:hover {
+  cursor: pointer;
+  transform: translatex(10px);
+  transition: all 0.3s ease-in;
 }
 
 .content-sent p {
@@ -837,7 +846,8 @@ nav {
 
 .app {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
   background-image: linear-gradient(
     to right,
     rgba(18, 68, 231, 0.96),
@@ -845,9 +855,18 @@ nav {
     rgb(30, 43, 226),
     rgba(80, 52, 218, 0.906)
   );
-  padding: 10px 15px 10px 25px;
+  padding: 10px 15px 10px 15px;
   border-radius: 10px;
   margin-top: 90px;
+  cursor: pointer;
+}
+
+.fa-apple {
+  font-size: 30px;
+}
+
+.fa-google-play {
+  font-size: 30px;
 }
 
 .app-download p {
@@ -903,7 +922,7 @@ nav {
 .basic h1 {
   font-size: 14.4px;
   font-weight: 700;
-  color: #0078f6;
+  color: #127ef1;
   margin-bottom: 15px;
   opacity: 1;
 }
@@ -912,4 +931,39 @@ nav {
 }
 .basic p {
   padding-bottom: 18px;
+}
+
+.basic p:hover {
+  color: white(255, 255, 255, 0.912);
+  opacity: 1;
+  font-weight: bold;
+  cursor: pointer;
+  transform: translatex(10px);
+  transition: all 0.3s ease-in;
+}
+
+.footer-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 75px;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 185px;
+}
+
+.footer-icon a i {
+  font-size: 35px;
+  opacity: 0.5;
+}
+
+.white-backround {
+  background-color: #fafafa;
+  padding-top: 110px;
+  border-bottom-left-radius: 3.6rem;
+  border-bottom-right-radius: 3.6rem;
+  width: 100vw;
+  margin-bottom: 80px;
 }
