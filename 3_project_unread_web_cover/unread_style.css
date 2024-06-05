@@ -123,7 +123,7 @@ nav {
   color: #0078f6;
   font-size: 2rem;
   line-height: 1rem;
-  height: 16px;
+  height: 16xpx;
   width: 12px;
   vertical-align: middle;
   display: inline-block;
@@ -531,11 +531,13 @@ nav {
   background-color: #fafafa;
   border-bottom-left-radius: 3.6rem;
   border-bottom-right-radius: 3.6rem;
+  position: relative;
 }
 
 .history-news-container nav {
   border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .history-news-container nav button {
@@ -563,8 +565,9 @@ nav {
 .history-box-pack {
   display: grid;
   grid-template-columns: 265px 265px 265px 265px;
-  grid-template-rows: 271px 271px 271px;
+  grid-template-rows: repeat(7, 80px);
   gap: 20px;
+  margin-top: 50px;
 }
 
 .history-box {
@@ -573,6 +576,12 @@ nav {
   position: relative;
 }
 
+.history-box:hover {
+  /* transform: scale(1.09); */
+  top: -8px;
+  transition: all 0.6s ease-in;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
 .history-box button {
   position: absolute;
   border-radius: 7px;
@@ -609,7 +618,7 @@ nav {
 .pack1 {
   background-image: url("./h1.jpeg");
   grid-column: 2 span;
-  grid-row: 2 span;
+  grid-row: 1/5;
   background-position: center;
   background-size: cover;
 }
@@ -618,34 +627,289 @@ nav {
   background-image: url("./h2.jpeg");
   background-position: center;
   background-size: cover;
+  grid-row: 1/4;
 }
 
 .pack3 {
   background-image: url("./h3.png");
   background-position: center;
   background-size: cover;
+  grid-row: 1/4;
 }
 
 .pack4 {
   background-image: url("./h4.jpeg");
   background-position: center;
   background-size: cover;
+  grid-column: 3/4;
+  grid-row: 4/8;
 }
 
 .pack5 {
   background-image: url("./h5.png");
   background-position: center;
   background-size: cover;
+  grid-column: 4/5;
+  grid-row: 4/8;
 }
 
 .pack6 {
   background-image: url("./h6.jpeg");
   background-position: center;
   background-size: cover;
+  grid-row: 5/8;
 }
 
 .pack7 {
   background-image: url("./h7.jpeg");
   background-position: center;
   background-size: cover;
+  grid-row: 5/8;
+}
+
+.pack8 {
+  background-image: url("./h8.jpeg");
+  grid-column: 2 span;
+  grid-row: 1/5;
+  background-position: center;
+  background-size: cover;
+}
+
+.pack9 {
+  background-image: url("./h9.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 1/4;
+}
+
+.pack10 {
+  background-image: url("./h10.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 1/4;
+}
+
+.pack11 {
+  background-image: url("./h11.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 4/8;
+}
+
+.pack12 {
+  background-image: url("./h12.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-column: 4/5;
+  grid-row: 4/8;
+}
+
+.pack13 {
+  background-image: url("./h13.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 5/8;
+}
+
+.pack14 {
+  background-image: url("./h14.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 5/8;
+}
+
+.pack15 {
+  background-image: url("./h15.jpeg");
+  grid-column: 2 span;
+  grid-row: 1/5;
+  background-position: center;
+  background-size: cover;
+}
+
+.pack16 {
+  background-image: url("./h16.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 1/4;
+}
+
+.pack17 {
+  background-image: url("./h17.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 1/4;
+}
+
+.pack18 {
+  background-image: url("./h18.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 4/8;
+}
+
+/* .pack19 {
+  background-image: url("./h12.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-column: 4/5;
+  grid-row: 4/8;
+} */
+
+.pack20 {
+  background-image: url("./h20.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 5/8;
+}
+
+.pack21 {
+  background-image: url("./h21.jpeg");
+  background-position: center;
+  background-size: cover;
+  grid-row: 5/8;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding-top: 80px;
+}
+
+.footer-main {
+  color: white;
+}
+
+.sent-road a img {
+  width: 138px;
+  height: 18px;
+}
+
+.content-sent {
+  width: 323px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 21px;
+  padding-bottom: 27px;
+  margin-top: 30px;
+  border-radius: 18px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(3, 3, 3, 0.739),
+    rgb(68, 73, 71),
+    rgba(3, 3, 3, 0.739)
+  );
+}
+
+.content-sent p {
+  opacity: 0.3;
+  font-size: 12.6px;
+}
+
+.content-sent h1 {
+  font-size: 14.4px;
+  font-weight: 500;
+}
+
+.sent-click {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 7px 13px;
+}
+
+.sent-click:hover {
+  background-color: #3399ff;
+  border: 6px solid #2243646b;
+  /* border-shadow: 6px 6px 6px 6px #1aff4016; */
+  padding: 2px 8px;
+}
+
+.app-download {
+  display: flex;
+  gap: 20px;
+  padding: 5px 10px;
+}
+
+.app {
+  display: flex;
+  gap: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgba(18, 68, 231, 0.96),
+    rgba(148, 169, 244, 0.973),
+    rgb(30, 43, 226),
+    rgba(80, 52, 218, 0.906)
+  );
+  padding: 10px 15px 10px 25px;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+
+.app-download p {
+  font-size: 9px;
+}
+
+.app-download h1 {
+  font-size: 14px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14.4px;
+  font-weight: 500;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.footer-detail-one {
+  width: 500px;
+}
+
+.footer-detail-one span {
+  opacity: 0.5;
+  font-size: 10.8px;
+}
+
+.footer-detail-two {
+  display: flex;
+  gap: 35px;
+  opacity: 0.5;
+  font-size: 10.8px;
+  color: white;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.basic h1 {
+  font-size: 14.4px;
+  font-weight: 700;
+  color: #0078f6;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+.part2 h1 {
+  color: black;
+}
+.basic p {
+  padding-bottom: 18px;
 }
