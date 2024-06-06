@@ -184,6 +184,10 @@ nav {
 
 .hero-content-container img:hover {
   object-view-box: inset(10% 10% 10% 10%);
+  transition: all 0.6 ease-in;
+  /* transform: scale(1.1); */
+  cursor: pointer;
+  /* object-position: 10% 10%; */
 }
 
 .hero-content-text {
