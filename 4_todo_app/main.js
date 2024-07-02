@@ -18,29 +18,23 @@ function zurah() {
   taskDoneList.innerHTML = "";
   taskBlockedList.innerHTML = "";
   for (let i = 0; i < task.length; i++) {
-    const newTask = ` <div class="col border text-light d-flex gap-5 m-2">
-    <div class="form-check d-block  m-1">
-      <input
-        class="form-check-input"
-        type="checkbox"
-        value=""
-        id="flexCheckIndeterminateDisabled"
-        disabled
-      />
-      <label
-        id=""
-        class="form-check-label text-start"
-        for="flexCheckIndeterminateDisabled"
-      >
-      ${task[i].garchig}
-      </label>
-      <span class="text-start" id="">${task[i].delgerengui}</span>
-    </div>
-    <div class="gap-3 d-flex fs-6 m-1">
-      <i class="fa-solid fa-pen-to-square text-light fs-5"></i>
-      <i id="btnTrash" class="fa-solid fa-trash text-danger fs-5"></i>
-    </div>
-  </div>
+    const newTask = ` 
+    <div class="col  bg-dark text-light d-flex justify-content-between gap-5 m-2 rounded-1 text-start">
+       <div class="form-check m-1">
+          <label
+         id=""
+         class="form-check-label text-start text-uppercase"
+         for="flexCheckIndeterminateDisabled"
+          >
+          ${task[i].garchig}
+           </label>
+          <p class="text-start" id="">${task[i].delgerengui}</p>
+       </div>
+       <div class="gap-3 d-flex fs-6 m-1">
+         <button class="btn m-o p-0 onclick="editBtn(${i})""><i class="fa-solid fa-pen-to-square text-light fs-5"></i></button> 
+         <button class="btn m-o p-0" onclick="deleteTask(${i})"><i class="fa-solid fa-trash text-danger-emphasis fs-5"></i></button> 
+       </div>
+     </div>
     `;
     switch (task[i].status) {
       case "Todo": {
@@ -76,8 +70,13 @@ btnAdd.addEventListener("click", function () {
   zurah();
 });
 
-zurah();
+function deleteTask(index) {
+  console.log(index);
+  task.splice(index, 1);
+  zurah();
+}
 
-btnTrash.addEventListener("click", function () {
-  newTaskElement.remove();
-});
+function count() {
+  const editTask = `
+  `;
+}
