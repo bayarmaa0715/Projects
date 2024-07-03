@@ -24,13 +24,13 @@
           <button
             class="btn btn-success"
             data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
+            data-bs-target="#newModal"
           >
             Add task
           </button>
           <div
             class="modal fade"
-            id="staticBackdrop"
+            id="newModal"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
             tabindex="-1"
@@ -53,7 +53,7 @@
                 <div
                   class="modal-body d-block text-start justify-content-center"
                 >
-                  <h6 class="mb-0`">Гарчиг</h6>
+                  <h6 class="mb-0">Гарчиг</h6>
                   <input
                     class="col-sm-11 bg-dark border border-secondary text-success rounded-1"
                     type="text"
@@ -75,7 +75,7 @@
                     id="status"
                     class="col-sm-11 mt-0 pt-1 pb-1 bg-dark border border-secondary text-success rounded-1 text-secondary"
                   >
-                    <option value="Todo">Хийх зйүлс</option>
+                    <option value="Todo">Хийх зүйлс</option>
                     <option value="Inprogress">Хийж байгаа</option>
                     <option value="Done">Хийсэн</option>
                     <option value="Blocked">Хийгээгүй</option>
@@ -89,7 +89,12 @@
                   >
                     Хаах
                   </button>
-                  <button id="btnAdd" type="button" class="btn btn-success">
+                  <button
+                    data-bs-dismiss="modal"
+                    id="btnAdd"
+                    type="button"
+                    class="btn btn-success"
+                  >
                     Нэмэх
                   </button>
                 </div>
@@ -111,7 +116,7 @@
               <h1 class="text-light fs-5 m-0 p-0">To do</h1>
             </div>
 
-            <p class="text-light fs-6 m-0 p-0">8</p>
+            <p class="text-light fs-6 m-0 p-0" id="countTodo">0</p>
           </div>
           <div id="taskTodoList"></div>
         </div>
@@ -127,7 +132,7 @@
               <h1 class="text-light fs-5 m-0 p-0">In progress</h1>
             </div>
 
-            <p class="text-light fs-6 m-0 p-0">8</p>
+            <p class="text-light fs-6 m-0 p-0" id="countInprogress">0</p>
           </div>
 
           <div id="taskInprogressList"></div>
@@ -143,7 +148,7 @@
               <h1 class="text-light fs-5 m-0 p-0">Done</h1>
             </div>
 
-            <p class="text-light fs-6 m-0 p-0">8</p>
+            <p class="text-light fs-6 m-0 p-0" id="countDone">0</p>
           </div>
 
           <div id="taskDoneList"></div>
@@ -159,7 +164,7 @@
               <h1 class="text-light fs-5 m-0 p-0">Blocked</h1>
             </div>
 
-            <p class="text-light fs-6 m-0 p-0">8</p>
+            <p class="text-light fs-6 m-0 p-0" id="countBlocked">0</p>
           </div>
 
           <div id="taskBlockedList"></div>
