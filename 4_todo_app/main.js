@@ -21,6 +21,11 @@ function zurah() {
   taskInprogressList.innerHTML = "";
   taskDoneList.innerHTML = "";
   taskBlockedList.innerHTML = "";
+  let todoCount = 0;
+  let inProgressCount = 0;
+  let doneCount = 0;
+  let blockCount = 0;
+
   for (let i = 0; i < task.length; i++) {
     const newTask = ` 
     <div class="col  bg-dark text-light d-flex justify-content-between gap-5 m-2 rounded-1 text-start">
@@ -43,31 +48,37 @@ function zurah() {
     switch (task[i].status) {
       case "Todo": {
         taskTodoList.innerHTML += newTask;
-        const sum = 0;
 
-        countTodo.textContent = taskTodoList.children.length;
+        todoCount++;
+        // countTodo.textContent = taskTodoList.children.length;
         break;
       }
       case "Inprogress": {
         taskInprogressList.innerHTML += newTask;
-
-        countInprogress.textContent = taskInprogressList.children.length;
+        inProgressCount++;
+        // countInprogress.textContent = taskInprogressList.children.length;
         break;
       }
       case "Done": {
         taskDoneList.innerHTML += newTask;
-        countDone.textContent = taskDoneList.children.length;
+        // countDone.textContent = taskDoneList.children.length;
+        doneCount++;
         break;
       }
       case "Blocked": {
         taskBlockedList.innerHTML += newTask;
-        countBlocked.textContent = taskBlockedList.children.length;
+        blockCount++;
+        // countBlocked.textContent = taskBlockedList.children.length;
       }
       default: {
         console.log("Status aa songonuu aldaa garlaa");
       }
     }
   }
+  countTodo.textContent = taskTodoList.children.length;
+  countInprogress.textContent = taskInprogressList.children.length;
+  countDone.textContent = taskDoneList.children.length;
+  countBlocked.textContent = taskBlockedList.children.length;
 }
 
 btnAdd.addEventListener("click", function () {
